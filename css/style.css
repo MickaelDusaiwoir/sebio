@@ -1,0 +1,149 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+body {
+  width: 960px;
+  margin: 0 auto;
+  background: url("../img/grid.png") top center repeat-y;
+  font: normal 15px Helvetica, Arial, Sans-Serif;
+}
+#pub {
+  margin: 2em 0 3em 0;
+}
+#pub:after {
+  clear: both;
+}
+#next-slide {
+  width: 228px;
+  margin: 0 8px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+#next-slide li {
+  height: 3.3em;
+  margin-top: 1.25em;
+  vertical-align: bottom;
+  list-style: none;
+  border: 1px solid black;
+  padding: 0.5em 0.5em 0 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+#next-slide li:first-child {
+  margin-top: 0;
+}
+#slider {
+  margin-top: 1em;
+  width: 716px;
+  margin: 0 8px;
+  display: inline-block;
+  margin-right: 0;
+  float: right;
+}
+#promo,
+#nouveaute,
+#suggestion {
+  width: 960px;
+  margin-bottom: 3em;
+}
+#promo article,
+#nouveaute article,
+#suggestion article {
+  display: inline-block;
+  width: 167px;
+  margin: 0 8px;
+  text-align: center;
+  margin: 0 1em 0 -3px;
+  vertical-align: top;
+}
+#promo .etiquette,
+#nouveaute .etiquette,
+#suggestion .etiquette {
+  width: 228px;
+  margin: 0 8px;
+  margin: 0 15px 0 0;
+}
+#promo ul,
+#nouveaute ul {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+  line-height: 2;
+  padding: 0;
+  font-weight: bold;
+}
+#promo article:last-child,
+#nouveaute article:last-child,
+#suggestion article:last-child {
+  margin-right: 0;
+}
+.etiquette h2 {
+  margin: 0;
+}
+.etiquette p {
+  font-size: 1.1em;
+  margin: 3.9em 0;
+}
+nav ul,
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+nav {
+  width: 960px;
+  margin: 0 8px;
+  margin: 0;
+}
+nav ul li {
+  position: relative;
+  width: 106px;
+  margin: 0 8px;
+  padding: 0;
+  margin: 0 0.85em 0 0;
+  vertical-align: top;
+  text-align: center;
+}
+nav ul ul {
+  position: absolute;
+  top: -9999px;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  z-index: 20;
+}
+nav ul li:hover > ul {
+  opacity: 1;
+  position: absolute;
+  top: 99%;
+  left: 0;
+}
+li ul {
+  width: 430px;
+  text-align: left;
+  line-height: 2;
+}
+li ul li {
+  width: 212px;
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+}
+.menu_large {
+  width: 167px;
+  margin: 0 8px;
+  margin: 0 0.85em 0 0;
+}
