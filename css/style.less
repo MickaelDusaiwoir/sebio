@@ -1,14 +1,26 @@
 @import "grid.less";
 
+@import "normalize.css";
+
+html {
+    background: #BFB85A;
+}
+
 body {
+    width: 970px;
+    margin: 0 auto;
+    -background: url("../img/grid.png") top center repeat-y;
+    font: normal 15px Helvetica, Arial, Sans-Serif;
+    background-color: #D9D59A;
+}
+
+#content {
     width: 960px;
     margin: 0 auto;
-    background: url("../img/grid.png") top center repeat-y;
-    font: normal 15px Helvetica, Arial, Sans-Serif;
 }
 
 #pub {
-    margin: 2em 0 3em 0;
+    margin: 2em 0 2.3em 0;
 }
 
 #pub:after {
@@ -31,6 +43,7 @@ margin: 0;
     padding: 0.5em 0.5em 0 0.5em;
     text-align: center;
     font-weight: bold;
+    background: #F2E6C2;
 }
 
 #next-slide li:first-child {
@@ -47,7 +60,11 @@ margin: 0;
 
 #promo, #nouveaute, #suggestion {
     width: 960px;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+}
+
+#promo img, #nouveaute img, #suggestion img {
+    border: 3px solid #BFB85A;
 }
 
 #promo article, #nouveaute article, #suggestion article {
@@ -56,11 +73,38 @@ margin: 0;
     text-align: center;
     margin: 0 1em 0 -3px;
     vertical-align: top;
+    -background: #F2E6C2;
+    background: white;
+    padding: 1em 0;
 }
+
+#promo h3, #nouveaute h3, #suggestion h3 {
+    font-weight: normal;
+}
+
+
+
+
+// ruban promo !!!
+
+#promo article p {
+    
+}
+
+
+
 
 #promo .etiquette, #nouveaute .etiquette, #suggestion .etiquette {
     .column(4);
     margin: 0 15px 0 0;
+}
+
+#promo .etiquette ul {    
+    margin: 0.95em 0;
+}
+
+#nouveaute .etiquette ul {
+    margin: 2em 0;
 }
 
 #promo ul, #nouveaute ul {
@@ -70,6 +114,7 @@ margin: 0;
     line-height: 2;
     padding:0;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 #promo article:last-child, #nouveaute article:last-child, #suggestion article:last-child {
@@ -82,21 +127,76 @@ margin: 0;
 
 .etiquette p {
     font-size: 1.1em;
-    margin: 3.9em 0;
+    margin: 4.2em 0;
+}
+
+
+// logo
+
+#logo {
+    display: inline;
+    margin-left: 5px;
+}
+
+#logo img {
+    margin-top: 5px;
+}
+
+// connexion et recherche
+
+#connexion_shearch {
+    float:right;
+    .column(6);
+    margin:0 5px 0 0; 
+    padding: 0;
+}
+
+#connexion_shearch ul {
+    padding-left: 0;
+    .column(6);
+    margin: 1.5em 0 1em 0;
+    padding: 0;
+}
+
+#connexion_shearch li {
+    display:inline-block;
+    .column(2);
+    margin: 0 0 0 0.8em;
+    text-align: center;
+}
+
+#connexion_shearch li:first-child {
+    margin-left: 0;
+}
+
+#connexion_shearch form {
+    display:inline-block;
+    .column(6);
+    padding:0;
+    margin:0;
+}
+
+#connexion_shearch input {
+    width: 329px;
+    margin:0;
+    padding:0.2em 0.5em 0.2em 0.7em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
 }
 
 // menu
 
-nav ul, nav li { 
-    list-style:none; 
-    padding:0; 
-    margin:0; 
-    display:inline-block; 
+nav ul { 
+    padding: 0;
+    margin-left: 4em; 
 }
 
 nav {
     .column(16);
-    margin: 0;
+    margin: 1em 0 0 0;
+    padding: 0 5px;
+    background: #8C6954;
 }
 
 nav ul li{ 
@@ -106,40 +206,67 @@ nav ul li{
     margin: 0 0.85em 0 0;
     vertical-align: top;
     text-align: center;
+    list-style:none; 
+    display:inline-block;
 }
 
-nav ul ul{ 
-	position:absolute; 
-	top:-9999px; 
-	left:0;
-	opacity: 0;
-	-webkit-transition: opacity .5s ease-in-out;
-	-moz-transition: opacity 1.5s ease-in-out;
-	-o-transition: opacity .5s ease-in-out;
-	z-index:20; 
+nav li:hover, #actif {
+    background-color: #734434;
+    box-shadow: 0px 0px 2px white;
 }
 
-nav ul li:hover > ul{ 
+nav li:hover > .secondaire{ 
     opacity: 1; 
     position:absolute; 
     top:99%; 
     left:0; 
+    background-color: #734434;
 }
 
-li ul {
-    width: 430px;
+.secondaire {
+    .column(7);
+    margin:0;
+    padding:0 5px;
     text-align: left;
-    line-height: 2;
+    line-height: 1.2;
+    position:absolute; 
+    top:-9999px; 
+    left:0;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    z-index:20;
 }
 
-li ul li {
-    width: 212px;   
+.secondaire li {
+    .column(3);   
     text-align: left;
-display: inline-block;
-margin: 0;
+    display: inline-block;
+    margin: 0 0.8em 0 0;
+    padding: 0;
 }
 
 .menu_large {
     .column(3);
     margin: 0 0.85em 0 0;
+}
+
+nav a, .menu_large a{
+    padding: 0.6em 0;
+    display: inline-block;
+    .column(2);
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.secondaire a {
+    .column(3);
+    margin: 0;
+}
+
+.menu_large a {
+    .column(3);
+    margin: 0;
 }
