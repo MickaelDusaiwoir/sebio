@@ -2,7 +2,7 @@
 body{width:100%;*zoom:1;}body:before,body:after{content:"";display:table;}
 body:after{clear:both;}
 html{background:#BFB85A;}
-body{width:970px;margin:0 auto;-background:url("../img/grid.png") top center repeat-y;font:normal 15px Helvetica,Arial,Sans-Serif;background-color:#D9D59A;}
+body{width:970px;margin:0 auto;background:url("../img/grid.png") top center repeat-y;font:normal 15px Helvetica,Arial,Sans-Serif;background-color:#D9D59A;}
 #content{width:960px;margin:0 auto;}
 #pub{margin:2em 0 2.3em 0;}
 #pub:after{clear:both;}
@@ -68,4 +68,9 @@ table .produit{width:594px;margin:0 8px;padding-right:0.55em;}
 table .qts{width:45px;margin:0 8px;padding:0;}
 table .prix{text-align:center;}
 fieldset{border:none;}
+tr td:last-child{padding-left:0;}
+table a{display:block;text-align:center;}
 #commande input[type=submit]{margin-left:48.5em;}
+.spaceTable{text-indent:-9999px;}
+table select{text-align:center;width:472px;margin:0 8px;margin:1em 0 1em 3.5em;}
+table p{width:472px;margin:0 8px;margin-left:3.5em;margin-bottom:1em;line-height:1.5;}

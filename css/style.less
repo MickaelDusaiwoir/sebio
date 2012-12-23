@@ -9,7 +9,7 @@ html {
 body {
     width: 970px;
     margin: 0 auto;
-    -background: url("../img/grid.png") top center repeat-y;
+    background: url("../img/grid.png") top center repeat-y;
     font: normal 15px Helvetica, Arial, Sans-Serif;
     background-color: #D9D59A;
 }
@@ -452,6 +452,32 @@ fieldset {
     border: none;
 }
 
+tr td:last-child {
+    padding-left: 0;
+}
+
+table a {
+    display: block;
+    text-align: center;
+}
+
 #commande input[type=submit] {
     margin-left: 48.5em;
+}
+
+.spaceTable {
+    text-indent: -9999px;
+}
+
+table select {
+    text-align: center;
+    .column(8);
+    margin: 1em 0 1em 3.5em;
+}
+
+table p {
+    .column(8);
+    margin-left: 3.5em;
+    margin-bottom: 1em;
+    line-height: 1.5;
 }
