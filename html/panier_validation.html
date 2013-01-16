@@ -3,29 +3,36 @@
     <head>
         <title>Sebio - Livraison</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+        <!--[if lt IE 9]>
+        <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+
     </head>
     <body>
-                <header>
+        <header>
             <div id="logo">
                 <a href="../index.html" title="Retourner à l'accueil"><img src="../img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
             </div>
-            <div id="connexion_shearch">
-                <ul>                    
-                    <li>
-                        <a href="#" title="Créer un compte sur le site">S'inscrire</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Vous connectez &agrave; votre compte">Se connecter</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Voir votre panier">Mon panier</a>
-                    </li>
-                </ul>
+            <div id="shearch_connexion">
+                <div id="supPan">
+                    <div id="panier">
+                        <img src="../img/panier.png" alt="Image du pannier" title="Image du pannier" height="100" width="100" />
+                        <a href="panier.html" title="Voir le panier">3</a>
+                    </div>
+                    <div id="connexion">
+                        <a href="#" title="Se connecter">Identifiez-vous</a>
+                        <a href="#" title="Voir mon compte">Mon compte</a>
+                    </div>
+                </div>
                 <form action="#" method="post">
                     <input type="text" placeholder="Rechercher ..."/>                    
                 </form>
             </div>
-            <nav>
+            <nav id="menu">
                 <ul id="principal">
                     <li>
                         <a href="../index.html" title="Se rendre sur la page d'accueil">Accueil</a>
@@ -37,7 +44,7 @@
                                 <a href="#" title="Voir toute nos nouveaut&eacute;es">Nouveautés</a>
                             </li>
                             <li>
-                                <a href="./html/liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
+                                <a href="liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
                             </li>
                             <li>
                                 <a href="#" title="Voir nos ch&egrave;ques Cadeau">Ch&egrave;ques Cadeau</a>
@@ -125,7 +132,119 @@
             </nav>
         </header>
         <div id="content">
-            
+            <p id="ariane"><a href="panier.html">Panier</a> &GT; <a href="panier_livraison.html">Livraison</a> &GT; Validation</p>
+            <h1>
+                Panier - Validation de la commande
+            </h1>
+            <table id="valid">
+                <thead>
+                    <tr>
+                        <th class="produit">
+                            Nom du produit
+                        </th>
+                        <th class="qts">
+                            Qts
+                        </th>
+                        <th class="prix">
+                            Prix
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="produit">
+                            Baume de massage Ayurvedique Abhyanga aux 18 plantes bio 
+                        </td>
+                        <td class="qts">
+                            <p>1</p>
+                        </td>
+                        <td class="prix">
+                            9,90&nbsp;&euro;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="produit">
+                            Lait solaire anti-âge IP 15 (Lavera Sun Sensitiv)
+                        </td>
+                        <td class="qts">
+                            <p>1</p>
+                        </td>
+                        <td class="prix">
+                            4,19&nbsp;&euro;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="produit">
+                            Bouteille d'eau filtrante "Fill & Go" (Brita)
+                        </td>
+                        <td class="qts">
+                            <p>1</p>
+                        </td>
+                        <td class="prix">
+                            14,36&nbsp;&euro;
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Mode de livraison choisi</th>
+                    </tr>
+                    <tr id="MDL">
+                        <td>
+                            <p>Envoi du colis (par la poste ou taxipost)</p>
+                            <p>
+                                Destinataire&nbsp;: Stephan Argento
+                            </p>
+                            <p>
+                                Adresse&nbsp;: Rue de la gare, 24 Li&egrave;ge
+                            </p>
+                            <p>
+                                Code postal: 4000
+                            </p>
+                        </td>
+                        <td class="spaceTable">...</td>
+                        <td class="prix">
+                            4,70&nbsp;&euro;
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">
+                            Mode de paiement choisi
+                        </th>
+                    </tr>
+                    <tr id="MDP">
+                        <td>
+                            <p>Virement bancaire</p>
+                            <p>
+                                - Sur le compte IBAN: <em>BE65 3630 0847 3796</em> BIC: <em>BBRUBEBB</em>
+                            </p>
+                            <p>
+                                - Veuillez noter en communication le numéro de commande&nbsp;!!!
+                            </p>
+                            <p>
+                                - Votre colis est envoyé dès réception du paiement.
+                            </p>
+                        </td>
+                        <td class="spaceTable">
+                            ...
+                        </td>
+                        <td class="spaceTable">
+                            ...
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Total articles (TTC)
+                        </td>
+                        <td colspan="1">
+                            33,15&nbsp;&euro;
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="#" method="post" id="confirmer">
+                <input type="submit" value="Confirmer ma commande" />
+            </form>
         </div>
     </body>
 </html>

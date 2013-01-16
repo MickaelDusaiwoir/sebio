@@ -3,33 +3,39 @@
     <head>
         <title>SeBio - Accueil</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
     </head>
     <body>
         <header>
             <div id="logo">
-                <a href="#" title="Retourner à l'accueil"><img src="img/logov3.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
+                <a href="#" title="Retourner à l'accueil"><img src="img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
             </div>
-            <div id="connexion_shearch">
-                <ul>                    
-                    <li>
-                        <a href="#" title="Créer un compte sur le site">S'inscrire</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Vous connectez &agrave; votre compte">Se connecter</a>
-                    </li>
-                    <li>
-                        <a href="html/panier.html" title="Voir votre panier">Mon panier</a>
-                    </li>
-                </ul>
+            <div id="shearch_connexion">
+                <div id="supPan">
+                    <div id="panier">
+                        <img src="img/panier.png" alt="Image du pannier" title="Image du pannier" height="100" width="100" />
+                        <a href="html/panier.html" title="Voir le panier">3</a>
+                    </div>
+                    <div id="connexion">
+                        <a href="#" title="Se connecter">Identifiez-vous</a>
+                        <a href="#" title="Voir mon compte">Mon compte</a>
+                    </div>
+                </div>
                 <form action="#" method="post">
                     <input type="text" placeholder="Rechercher ..."/>                    
                 </form>
             </div>
-            <nav>
+            <nav id="menu">
                 <ul id="principal">
                     <li id="actif">
-                        <a href="#" title="Se rendre sur la page d'accueil">Accueil</a>
+                        <a href="index.html" title="Se rendre sur la page d'accueil">Accueil</a>
                     </li>
                     <li>
                         <a href="#" title="Voir nos bon plans">Bons Plans</a>
@@ -38,7 +44,7 @@
                                 <a href="#" title="Voir toute nos nouveaut&eacute;es">Nouveautés</a>
                             </li>
                             <li>
-                                <a href="./html/liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
+                                <a href="html/liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
                             </li>
                             <li>
                                 <a href="#" title="Voir nos ch&egrave;ques Cadeau">Ch&egrave;ques Cadeau</a>
@@ -127,19 +133,27 @@
         </header>
         <div id="content">
             <div id="pub">
-                <ul id="next-slide">
-                    <li>
-                        Recevez <em>5%</em> de remise sur votre 1&egrave;re commande&nbsp;!
-                    </li>
-                    <li>
-                        <em>Frais d’envoi offerts</em> &agrave; partir de <em>60&nbsp;&euro;</em> de commande&nbsp;!
-                    </li>
-                    <li>
-                        <em>1 seul article acheté&nbsp;?</em><br /> <em>1&nbsp;&euro;</em> de frais d’envoi&nbsp;!
-                    </li>
-                </ul>
-                <div id="slider">
-                    <img src="http://placehold.it/716x215" width="716" height="215" alt="..." title="..."/>
+                <div id="featured" >
+                    <ul class="ui-tabs-nav">
+                        <li class="ui-tabs-nav-item" id="nav-fragment-1">
+                            <a href="#fragment-1">Recevez <em>5%</em> de remise sur votre <em>1&egrave;re commande&nbsp;!</em></a>
+                        </li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-2">
+                            <a href="#fragment-2"><em>Frais d’envoi offerts</em> &agrave; partir de <em>60&nbsp;&euro;</em> de commande&nbsp;!</a>
+                        </li>
+                        <li class="ui-tabs-nav-item" id="nav-fragment-3">
+                            <a href="#fragment-3"><em>1 seul article acheté&nbsp;?</em><br /> <em>1&nbsp;&euro;</em> de frais d’envoi&nbsp;!</a>
+                        </li>
+                    </ul>
+                    <div id="fragment-1" class="ui-tabs-panel">
+                        <img src="http://placehold.it/716x215" width="716" height="215" alt="..." title="..." />
+                    </div>
+                    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
+                        <img src="http://placehold.it/716x215" width="716" height="215" alt="..." title="..." />
+                    </div>
+                    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide">
+                        <img src="http://placehold.it/716x215" width="716" height="215" alt="..." title="..." />
+                    </div>
                 </div>
             </div>
             <div id="produit">
@@ -148,26 +162,13 @@
                         <h2>
                             LIQUIDATION&nbsp;!
                         </h2>
-                        <ul>
-                            <li>
-                                - 50%
-                            </li>
-                            <li>
-                                - 40%
-                            </li>
-                            <li>
-                                - 30%
-                            </li>
-                            <li>
-                                - 20%
-                            </li>
-                        </ul>
-                        <a href="./html/liquidation.html" title="Voir les promotions">Tous articles en liquidation&nbsp;!</a>
+                        <img src="img/solde.png" alt="Liquidation" title="Liquidation" width="220" height="175"/>
+                        <a href="html/liquidation.html" title="Voir les promotions">Tous articles en liquidation&nbsp;!</a>
                     </article>                   
                     <article>
-                        <a href="#"><img src="img/promo/spray.jpg" width="140" height="100" alt="Déodorant spray – hamamélis / rose " title="Déodorant spray – hamamélis / rose "/></a>
+                        <a href="html/article.html"><img src="img/promo/spray.jpg" width="140" height="100" alt="Déodorant spray – hamamélis / rose " title="Déodorant spray – hamamélis / rose "/></a>
                         <h3>
-                            Déodorant spray
+                            <a href="html/article.html" title="Déodorant spray">Déodorant spray</a>
                         </h3>
                         <p>
                             5,04&nbsp;&euro;
@@ -182,7 +183,7 @@
                     <article>
                         <a href="#"><img src="img/promo/lait_so_min.jpg" width="140" height="100" alt="Lait solaire anti-âge" title="Lait solaire anti-âge"/></a>
                         <h3>
-                            Lait solaire anti-âge
+                            <a href="#" title="Lait solaire anti-âge">Lait solaire anti-âge</a>
                         </h3>
                         <p>
                             4,19&nbsp;&euro;
@@ -197,7 +198,7 @@
                     <article>
                         <a href="#"><img src="img/promo/creme_min.jpg" width="140" height="100" alt="Crème Ecran solaire" title="Crème Ecran solaire"/></a>
                         <h3>
-                            Crème Ecran solaire
+                            <a href="#" title="Cr&egrave;me ecran solaire">Cr&egrave;me Ecran solaire</a>
                         </h3>
                         <p>
                             6,77&nbsp;&euro;
@@ -212,7 +213,7 @@
                     <article>
                         <a href="#"><img src="img/promo/lait_min.jpg" width="140" height="100" alt="Lait de chèvre" title="Lait de chèvre"/></a>
                         <h3>
-                            Lait de chèvre
+                            <a href="#" title="Lait de ch&egrave;vre">Lait de ch&egrave;vre</a>
                         </h3>
                         <p>
                             7,50&nbsp;&euro;
@@ -246,7 +247,7 @@
                     <article>
                         <a href="#"><img src="img/new/bouteille-min.jpg" width="140" height="100" alt="Bouteille d'eau filtrante Brita" title="Bouteille d'eau filtrante Brita" /></a>
                         <h3>
-                            Bouteille filtrante
+                            <a href="#" title="Bouteille filtrante">Bouteille filtrante</a>
                         </h3>
                         <p>
                             14,36&nbsp;&euro; 
@@ -261,7 +262,7 @@
                     <article>
                         <a href="#"><img src="img/new/recharge-min.jpg" width="140" height="100" alt="Recharges pour Diffuseur USB " title="Recharges pour Diffuseur USB "/></a>
                         <h3>
-                            Recharge diffuseur  
+                            <a href="#" title="Recharge Diffuseur">Recharge diffuseur</a>  
                         </h3>
                         <p>
                             5,94&nbsp;&euro;
@@ -276,7 +277,7 @@
                     <article>
                         <a href="#"><img src="img/new/diffuseur-min.jpg" width="140" height="100" alt="Diffuseur Clé USB" title="Diffuseur Clé USB"/></a>
                         <h3>
-                            Diffuseur USB
+                            <a href="#" title="Diffuseur USB">Diffuseur USB</a>
                         </h3>
                         <p>
                             16,99&nbsp;&euro;
@@ -291,7 +292,7 @@
                     <article>
                         <a href="#"><img src="img/new/gel-min.jpg" width="140" height="100" alt="Gel douche à la figue de barbarie" title="Gel douche à la figue de barbarie"/></a>
                         <h3>
-                            Gel Douche
+                            <a href="#" title="Gel douche">Gel Douche</a>
                         </h3>
                         <p>
                             14,95&nbsp;&euro;
@@ -312,12 +313,12 @@
                         <p>
                             S&eacute;l&eacute;ction de produit qui peuvent vous int&eacute;r&eacute;ssez
                         </p>
-                        <a href="#" title="Voir les suggestions">Tous les suggestions</a>
+                        <a href="#" title="Voir les suggestions">Voir d'autres suggestions</a>
                     </article>                   
                     <article>
                         <a href="#"><img src="img/sug/gel-min.jpg" width="140" height="100" alt="Soin visage 3-en-1 + Gel Nettoyant Visage" title="Soin visage 3-en-1 + Gel Nettoyant Visage"/></a>
                         <h3>
-                            Soin visage 3-en-1
+                            <a href="#" title="Soin visage 3-en-1">Soin visage 3-en-1</a>
                         </h3>
                         <p>
                             27,46&nbsp;&euro;
@@ -329,7 +330,7 @@
                     <article>
                         <a href="#"><img src="img/sug/deo-min.jpg" width="140" height="100" alt="Déodorant à bille (Lavera - Basis Sensitiv)" title="Déodorant à bille (Lavera - Basis Sensitiv)"/></a>
                         <h3>
-                            Déodorant à bille
+                            <a href="#" title="D&eacute;odorant &agrave; bille">D&eacute;odorant &agrave; bille</a>
                         </h3>
                         <p>
                             14,95&nbsp;&euro;
@@ -341,7 +342,7 @@
                     <article>
                         <a href="#"><img src="img/sug/enve-min.jpg" width="140" height="100" alt="Enveloppes recyclées 110x220 mm" title="Enveloppes recyclées 110x220 mm" /></a>
                         <h3>
-                            Enveloppe recyclée
+                            <a href="#" title="Enveloppe recyl&eacute;e">Enveloppe recycl&eacute;e</a>
                         </h3>
                         <p>
                             7,30&nbsp;&euro;
@@ -353,7 +354,7 @@
                     <article>
                         <a href="#"><img src="img/sug/baume-min.jpg" width="140" height="100" alt="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" title="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio"/></a>
                         <h3>
-                            Baume de massage
+                            <a href="#" title="Baume de massage">Baume de massage</a>
                         </h3>
                         <p>
                             9,90&nbsp;&euro;
@@ -365,5 +366,12 @@
                 </div>
             </div>            
         </div>
+        <script type="text/javascript" src="js/jquery-1.8.2.js" ></script>
+        <script type="text/javascript" src="js/slider.js" ></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 2000, true);
+            });
+        </script>
     </body>
 </html>

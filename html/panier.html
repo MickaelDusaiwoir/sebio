@@ -3,30 +3,36 @@
     <head>
         <title>SeBio - Mon panier</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        
+        <!--[if lt IE 9]>
+        <script src="../js/html5shiv.js"></script>
+        <![endif]-->
+        
     </head>
     <body>
         <header>
             <div id="logo">
                 <a href="../index.html" title="Retourner à l'accueil"><img src="../img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
             </div>
-            <div id="connexion_shearch">
-                <ul>                    
-                    <li>
-                        <a href="#" title="Créer un compte sur le site">S'inscrire</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Vous connectez &agrave; votre compte">Se connecter</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Voir votre panier">Mon panier</a>
-                    </li>
-                </ul>
+            <div id="shearch_connexion">
+                <div id="supPan">
+                    <div id="panier">
+                        <img src="../img/panier.png" alt="Image du pannier" title="Image du pannier" height="100" width="100" />
+                        <a href="panier.html" title="Voir le panier">3</a>
+                    </div>
+                    <div id="connexion">
+                        <a href="#" title="Se connecter">Identifiez-vous</a>
+                        <a href="#" title="Voir mon compte">Mon compte</a>
+                    </div>
+                </div>
                 <form action="#" method="post">
                     <input type="text" placeholder="Rechercher ..."/>                    
                 </form>
             </div>
-            <nav>
+            <nav id="menu">
                 <ul id="principal">
                     <li>
                         <a href="../index.html" title="Se rendre sur la page d'accueil">Accueil</a>
@@ -38,7 +44,7 @@
                                 <a href="#" title="Voir toute nos nouveaut&eacute;es">Nouveautés</a>
                             </li>
                             <li>
-                                <a href="./html/liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
+                                <a href="liquidation.html" title="Voir tous nos articles en liquidation">Articles en liquidation&nbsp;! </a>
                             </li>
                             <li>
                                 <a href="#" title="Voir nos ch&egrave;ques Cadeau">Ch&egrave;ques Cadeau</a>
@@ -127,9 +133,9 @@
         </header>
         <div id="content">
             <h1>
-                Mon panier - Récapitulatif
+                Mon panier - Commande
             </h1>
-            <form action="#" method="post" id="commande"> 
+            <form action="panier_livraison.html" method="post" id="commande"> 
                 <fieldset>
                     <table>
                         <thead>
@@ -194,7 +200,7 @@
                             <tr>
                                 <th colspan="4">Mode de livraison</th>
                             </tr>
-                            <tr>
+                            <tr id="MDL">
                                 <td>
                                     <select>
                                         <option>
@@ -225,7 +231,7 @@
                                     Mode de paiement
                                 </th>
                             </tr>
-                            <tr>
+                            <tr id="MDP">
                                 <td>
                                     <select>
                                         <option>
@@ -268,12 +274,12 @@
                                     Total articles (TTC)
                                 </td>
                                 <td colspan="1">
-                                    28,45&nbsp;&euro;
+                                    33,15&nbsp;&euro;
                                 </td>
                             </tr>
                         </tfoot>
                     </table>
-                    <input type="submit" value="Valider la commande" />                  
+                    <input type="submit" value="Passer la commande" />                  
                 </fieldset>
             </form>                      
         </div>
