@@ -14,8 +14,8 @@
     </head>
     <body>
         <header>
-            <div id="logo">
-                <a href="#" title="Retourner à l'accueil"><img src="img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
+            <div id="logo" itemscope itemtype="http://schema.org/Brand">
+                <a href="#" title="Retourner à l'accueil"><img src="img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil"  itemprop="logo"/></a>
             </div>
             <div id="shearch_connexion">
                 <div id="supPan">
@@ -33,6 +33,9 @@
                 </form>
             </div>
             <nav id="menu">
+                <h4>
+                    Sebio menu
+                </h4>
                 <ul id="principal">
                     <li id="actif">
                         <a href="index.html" title="Se rendre sur la page d'accueil">Accueil</a>
@@ -157,7 +160,10 @@
                 </div>
             </div>
             <div id="produit">
-                <div id="promo">
+                <section id="promo">
+                    <h4>
+                        LIQUIDATION&nbsp;!
+                    </h4>
                     <article class="etiquette">
                         <h2>
                             LIQUIDATION&nbsp;!
@@ -165,12 +171,12 @@
                         <img src="img/solde.png" alt="Liquidation" title="Liquidation" width="220" height="175"/>
                         <a href="html/liquidation.html" title="Voir les promotions">Tous articles en liquidation&nbsp;!</a>
                     </article>                   
-                    <article>
-                        <a href="html/article.html"><img src="img/promo/spray.jpg" width="140" height="100" alt="Déodorant spray – hamamélis / rose " title="Déodorant spray – hamamélis / rose "/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="html/article.html"><img src="img/promo/spray.jpg" width="140" height="100" alt="Déodorant spray – hamamélis / rose " title="Déodorant spray – hamamélis / rose " itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="html/article.html" title="Déodorant spray">Déodorant spray</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             5,04&nbsp;&euro;
                         </p>
                         <p class="reduc">
@@ -180,12 +186,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/promo/lait_so_min.jpg" width="140" height="100" alt="Lait solaire anti-âge" title="Lait solaire anti-âge"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/promo/lait_so_min.jpg" width="140" height="100" alt="Lait solaire anti-âge" title="Lait solaire anti-âge" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Lait solaire anti-âge">Lait solaire anti-âge</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             4,19&nbsp;&euro;
                         </p>
                         <p class="reduc">
@@ -195,12 +201,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/promo/creme_min.jpg" width="140" height="100" alt="Crème Ecran solaire" title="Crème Ecran solaire"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/promo/creme_min.jpg" width="140" height="100" alt="Crème Ecran solaire" title="Crème Ecran solaire" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Cr&egrave;me ecran solaire">Cr&egrave;me Ecran solaire</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             6,77&nbsp;&euro;
                         </p>
                         <p class="reduc">
@@ -210,12 +216,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/promo/lait_min.jpg" width="140" height="100" alt="Lait de chèvre" title="Lait de chèvre"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/promo/lait_min.jpg" width="140" height="100" alt="Lait de chèvre" title="Lait de chèvre" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Lait de ch&egrave;vre">Lait de ch&egrave;vre</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             7,50&nbsp;&euro;
                         </p>
                         <p class="reduc">
@@ -225,8 +231,11 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                </div>
-                <div id="nouveaute">
+                </section>
+                <section id="nouveaute">
+                    <h4>
+                        Nouveauté
+                    </h4>
                     <article class="etiquette">
                         <h2>
                             Nouveauté
@@ -244,12 +253,12 @@
                         </ul>
                         <a href="./html/nouveau.html" title="Voir toutes les nouveaut&eacute;" >Toutes les nouveaut&eacute;</a>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/new/bouteille-min.jpg" width="140" height="100" alt="Bouteille d'eau filtrante Brita" title="Bouteille d'eau filtrante Brita" /></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/new/bouteille-min.jpg" width="140" height="100" alt="Bouteille d'eau filtrante Brita" title="Bouteille d'eau filtrante Brita" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Bouteille filtrante">Bouteille filtrante</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             14,36&nbsp;&euro; 
                         </p>
                         <p class="new">
@@ -259,12 +268,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/new/recharge-min.jpg" width="140" height="100" alt="Recharges pour Diffuseur USB " title="Recharges pour Diffuseur USB "/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/new/recharge-min.jpg" width="140" height="100" alt="Recharges pour Diffuseur USB " title="Recharges pour Diffuseur USB " itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Recharge Diffuseur">Recharge diffuseur</a>  
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             5,94&nbsp;&euro;
                         </p>
                         <p class="new">
@@ -274,12 +283,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/new/diffuseur-min.jpg" width="140" height="100" alt="Diffuseur Clé USB" title="Diffuseur Clé USB"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/new/diffuseur-min.jpg" width="140" height="100" alt="Diffuseur Clé USB" title="Diffuseur Clé USB" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Diffuseur USB">Diffuseur USB</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             16,99&nbsp;&euro;
                         </p>
                         <p class="new">
@@ -289,12 +298,12 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/new/gel-min.jpg" width="140" height="100" alt="Gel douche à la figue de barbarie" title="Gel douche à la figue de barbarie"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/new/gel-min.jpg" width="140" height="100" alt="Gel douche à la figue de barbarie" title="Gel douche à la figue de barbarie" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Gel douche">Gel Douche</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             14,95&nbsp;&euro;
                         </p>
                         <p class="new">
@@ -304,8 +313,11 @@
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                </div>
-                <div id="suggestion">
+                </section>
+                <section id="suggestion">
+                    <h4>
+                        Suggestion
+                    </h4>
                     <article class="etiquette">
                         <h2>
                             Suggestion 
@@ -315,55 +327,55 @@
                         </p>
                         <a href="#" title="Voir les suggestions">Voir d'autres suggestions</a>
                     </article>                   
-                    <article>
-                        <a href="#"><img src="img/sug/gel-min.jpg" width="140" height="100" alt="Soin visage 3-en-1 + Gel Nettoyant Visage" title="Soin visage 3-en-1 + Gel Nettoyant Visage"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/sug/gel-min.jpg" width="140" height="100" alt="Soin visage 3-en-1 + Gel Nettoyant Visage" title="Soin visage 3-en-1 + Gel Nettoyant Visage" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Soin visage 3-en-1">Soin visage 3-en-1</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             27,46&nbsp;&euro;
                         </p>
                         <form action="#" method="post">
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/sug/deo-min.jpg" width="140" height="100" alt="Déodorant à bille (Lavera - Basis Sensitiv)" title="Déodorant à bille (Lavera - Basis Sensitiv)"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/sug/deo-min.jpg" width="140" height="100" alt="Déodorant à bille (Lavera - Basis Sensitiv)" title="Déodorant à bille (Lavera - Basis Sensitiv)" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="D&eacute;odorant &agrave; bille">D&eacute;odorant &agrave; bille</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             14,95&nbsp;&euro;
                         </p>
                         <form action="#" method="post">
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/sug/enve-min.jpg" width="140" height="100" alt="Enveloppes recyclées 110x220 mm" title="Enveloppes recyclées 110x220 mm" /></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/sug/enve-min.jpg" width="140" height="100" alt="Enveloppes recyclées 110x220 mm" title="Enveloppes recyclées 110x220 mm" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Enveloppe recyl&eacute;e">Enveloppe recycl&eacute;e</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             7,30&nbsp;&euro;
                         </p>
                         <form action="#" method="post">
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                    <article>
-                        <a href="#"><img src="img/sug/baume-min.jpg" width="140" height="100" alt="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" title="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio"/></a>
-                        <h3>
+                    <article itemscope itemtype="http://schema.org/Product">
+                        <a href="#"><img src="img/sug/baume-min.jpg" width="140" height="100" alt="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" title="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" itemprop="image"/></a>
+                        <h3 itemprop="name">
                             <a href="#" title="Baume de massage">Baume de massage</a>
                         </h3>
-                        <p>
+                        <p itemtype="http://schema.org/Offer" itemprop="price">
                             9,90&nbsp;&euro;
                         </p>
                         <form action="#" method="post">
                             <input type="submit" value="Ajouter au panier" />
                         </form>
                     </article>
-                </div>
+                </section>
             </div>            
         </div>
         <script type="text/javascript" src="js/jquery-1.8.2.js" ></script>

@@ -14,8 +14,8 @@
     </head>
     <body>
         <header>
-            <div id="logo">
-                <a href="../index.html" title="Retourner à l'accueil"><img src="../img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil" /></a>
+            <div id="logo" itemscope itemtype="http://schema.org/Brand">
+                <a href="../index.html" title="Retourner à l'accueil"><img src="../img/logo.png" width="220" height="100" alt="Sebio - Accueil" title="Retourner à l'accueil"  itemprop="logo"/></a>
             </div>
             <div id="shearch_connexion">
                 <div id="supPan">
@@ -133,95 +133,86 @@
         </header>
         <div id="content">
             <p id="ariane"><a href="../index.html" title="Retourner &agrave; l'accueil">Accueil</a> &GT; <a href="#" title="Voir les produits en liquidation">Liquidation</a> &GT; D&eacute;odorant spray</p>
-            <section>
-                <div id="vigniette">
-                    <img src="../img/promo/spray_gd.jpg" alt="D&eacute;odorant spray" title="D&eacute;odorant spray" width="100" height="300"/>
-                </div>
-                <div id="info">
-                    <h1>
-                        Déodorant spray – hamamélis / rose 
-                    </h1>
+            <div itemscope itemtype="http://schema.org/Product">
+                <section>
+                    <div id="vigniette">
+                        <img src="../img/promo/spray_gd.jpg" alt="D&eacute;odorant spray" title="D&eacute;odorant spray" width="100" height="300" itemprop="image"/>
+                    </div>
+                    <div id="info">
+                        <h1 itemprop="name">
+                            Déodorant spray – hamamélis / rose 
+                        </h1>
+                        <p>
+                            Le déodorant en spray Basis de Lavera régule la transpiration et élimine les odeurs désagréables.
+                            Une synergie d'huiles essentielles parfume délicatement votre corps en laissant une agréable sensation de fraîcheur durant toute la journée. 
+                            Ce déodorant ne contient pas d'aluminium et ne bouche pas les pores de la peau.
+                        </p>
+                        <ul id="prix">
+                            <li>
+                                Prix initial&nbsp;: <span>8,40 &euro;</span>
+                            </li>
+                            <li>
+                                R&eacute;duction&nbsp;: <em>- 40 %</em>
+                            </li>
+                            <li itemprop="price">
+                                Prix&nbsp;: 5,04 &euro;
+                            </li>
+                        </ul>
+                        <p id="stock" itemprop="availability">
+                            Rupture de stock
+                        </p>
+                    </div>
+                    <div id="ajout">
+                        <form action="#" method="post">
+                            <fieldset>
+                                <label>
+                                    Quantit&eacute;
+                                </label>
+                                <input type="text" value="1" />
+                                <input type="submit" value="Ajouter au panier" id="ajtPanier"/>
+                                <span>Ou</span>
+                                <input type="submit" value="Ajouter &agrave; la liste de naissance" />
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>  
+                <section id="formule">
+                    <h3>
+                        Formule
+                    </h3>
+                    <ul>
+                        <li itemprop="description">
+                            100% sans conservateur, parfum, colorants de synth&egrave;se et d&eacute;riv&eacute;s de la p&eacute;trochimie.
+                        </li>
+                        <li itemprop="description">
+                            Extraits de plantes et huiles essentielles Bio.
+                        </li>
+                        <li itemprop="description">
+                            Non test&eacute; sur les animaux.
+                        </li>
+                        <li itemprop="description">
+                            Certifi&eacute; &laquo; Cosm&eacute;tique Naturel Contr&ocirc;l&eacute; &raquo; par le BDIH.
+                        </li>
+                        <li itemprop="description">
+                            Certifi&eacute; par Inac.
+                        </li>
+                    </ul>
+                </section>
+                <div id="infoSup" itemprop ="description">
                     <p>
-                        Le déodorant en spray Basis de Lavera régule la transpiration et élimine les odeurs désagréables.
-                        Une synergie d'huiles essentielles parfume délicatement votre corps en laissant une agréable sensation de fraîcheur durant toute la journée. 
-                        Ce déodorant ne contient pas d'aluminium et ne bouche pas les pores de la peau.
+                        La gamme Basis, c'est le pari d'un prix amical sans concession sur la qualit&eacute;&nbsp;: le meilleur rapport qualit&eacute;/prix des cosm&eacute;tiques naturels. 
+                        Avec des extraits de plantes et des huiles essentielles bio, toujours sans conservateurs, ni colorants ou parfums de synth&egrave;se pour &ecirc;tre en accord avec la certification BDIH.
                     </p>
-                    <ul id="prix">
-                        <li>
-                            Prix initial&nbsp;: <span>8,40 &euro;</span>
-                        </li>
-                        <li>
-                            R&eacute;duction&nbsp;: <em>- 40 %</em>
-                        </li>
-                        <li>
-                            Prix&nbsp;: 5,04 &euro;
-                        </li>
-                    </ul>
-                    <p id="stock">
-                        Rupture de stock
-                    </p>
+                    <img src="../img/bdih.png" title="Logo du contr&ocirc;le qualit&eacute; BDIH" alt="Logo du contr&ocirc;le qualit&eacute; BDIH" width="140" height="140" />
                 </div>
-                <div id="ajout">
-                    <ul id="prix">
-                        <li>
-                            Prix initial&nbsp;: 8,40 &euro;
-                        </li>
-                        <li>
-                            R&eacute;duction&nbsp;: <em>- 40 %</em>
-                        </li>
-                        <li>
-                            Prix&nbsp;: 5,04 &euro;
-                        </li>
-                    </ul>
-                    <form action="#" method="post">
-                        <fieldset>
-                            <label>
-                                Quantit&eacute;
-                            </label>
-                            <input type="text" value="1" />
-                            <input type="submit" value="Ajouter au panier" id="ajtPanier"/>
-                            <span>Ou</span>
-                            <input type="submit" value="Ajouter &agrave; la liste de naissance" />
-                        </fieldset>
-                    </form>
-                </div>
-            </section>  
-            <section id="formule">
-                <h3>
-                    Formule
-                </h3>
-                <ul>
-                    <li>
-                        100% sans conservateur, parfum, colorants de synth&egrave;se et d&eacute;riv&eacute;s de la p&eacute;trochimie.
-                    </li>
-                    <li>
-                        Extraits de plantes et huiles essentielles Bio.
-                    </li>
-                    <li>
-                        Non test&eacute; sur les animaux.
-                    </li>
-                    <li>
-                        Certifi&eacute; &laquo; Cosm&eacute;tique Naturel Contr&ocirc;l&eacute; &raquo; par le BDIH.
-                    </li>
-                    <li>
-                        Certifi&eacute; par Inac.
-                    </li>
-                </ul>
-            </section>
-            <div id="infoSup">
-                <p>
-                    La gamme Basis, c'est le pari d'un prix amical sans concession sur la qualit&eacute;&nbsp;: le meilleur rapport qualit&eacute;/prix des cosm&eacute;tiques naturels. 
-                    Avec des extraits de plantes et des huiles essentielles bio, toujours sans conservateurs, ni colorants ou parfums de synth&egrave;se pour &ecirc;tre en accord avec la certification BDIH.
-                </p>
-                <img src="../img/bdih.png" title="Logo du contr&ocirc;le qualit&eacute; BDIH" alt="Logo du contr&ocirc;le qualit&eacute; BDIH" width="140" height="140" />
             </div>
             <div id="fqtAcheter">
                 <h2>
                     Produits fr&eacute;quemment achet&eacute;s ensemble
                 </h2>
-                <article id="first">
-                    <a href="#"><img src="../img/promo/lait_so_min.jpg" width="140" height="100" alt="Lait solaire anti-âge" title="Lait solaire anti-âge"/></a>
-                    <h3>
+                <article id="first" itemscope itemtype="http://schema.org/Product">
+                    <a href="#"><img src="../img/promo/lait_so_min.jpg" width="140" height="100" alt="Lait solaire anti-âge" title="Lait solaire anti-âge" itemprop="image"/></a>
+                    <h3 itemprop="name">
                         <a href="#" title="Lait solaire anti-âge">Lait solaire anti-âge</a>
                     </h3>
                     <p>
@@ -234,9 +225,9 @@
                         <input type="submit" value="Ajouter au panier" />
                     </form>
                 </article>
-                <article>
-                    <a href="#"><img src="../img/promo/creme_min.jpg" width="140" height="100" alt="Crème Ecran solaire" title="Crème Ecran solaire"/></a>
-                    <h3>
+                <article itemscope itemtype="http://schema.org/Product">
+                    <a href="#"><img src="../img/promo/creme_min.jpg" width="140" height="100" alt="Crème Ecran solaire" title="Crème Ecran solaire" itemprop="image"/></a>
+                    <h3 itemprop="name">
                         <a href="#" title="Cr&egrave;me ecran solaire">Cr&egrave;me Ecran solaire</a>
                     </h3>
                     <p>
@@ -249,9 +240,9 @@
                         <input type="submit" value="Ajouter au panier" />
                     </form>
                 </article>
-                <article>
-                    <a href="#"><img src="../img/promo/lait_min.jpg" width="140" height="100" alt="Lait de chèvre" title="Lait de chèvre"/></a>
-                    <h3>
+                <article itemscope itemtype="http://schema.org/Product">
+                    <a href="#"><img src="../img/promo/lait_min.jpg" width="140" height="100" alt="Lait de chèvre" title="Lait de chèvre" itemprop="image"/></a>
+                    <h3 itemprop="name">
                         <a href="#" title="Lait de ch&egrave;vre">Lait de ch&egrave;vre</a>
                     </h3>
                     <p>
@@ -264,9 +255,9 @@
                         <input type="submit" value="Ajouter au panier" />
                     </form>
                 </article>
-                <article>
-                    <a href="#"><img src="../img/sug/baume-min.jpg" width="140" height="100" alt="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" title="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio"/></a>
-                    <h3>
+                <article itemscope itemtype="http://schema.org/Product">
+                    <a href="#"><img src="../img/sug/baume-min.jpg" width="140" height="100" alt="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" title="Baume de massage Ayurvedique Abhyanga aux 18 plantes bio" itemprop="image"/></a>
+                    <h3 itemprop="name">
                         <a href="#" title="Baume de massage">Baume de massage</a>
                     </h3>
                     <p>

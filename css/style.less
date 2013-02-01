@@ -17,6 +17,10 @@ body {
     box-shadow: 0 0 0.5em white;
 }
 
+h4 {
+    display: none;
+}
+
 #content {
     width: 960px;
     margin: 0 auto;
@@ -25,6 +29,17 @@ body {
 em {
     color: red;
 }
+
+#prix {
+    list-style: none;
+    font-size: 1.165em;
+    padding: 0;
+}
+
+#prix li {
+    margin: 0.2em 0;
+}
+
 
 /////////////////////////////////////////////////////////////////////// CLEAR BOTH
 
@@ -686,21 +701,6 @@ section {
     text-align: center;
 }
 
-#prix {
-    list-style: none;
-    line-height: 1.62;
-    padding: 0;
-    margin: 0;
-}
-
-#prix li {
-    font-weight: bold;
-}
-
-#prix span {
-    text-decoration:line-through;
-}
-
 #ajout {
     .column(4);
     display: inline-block;
@@ -740,12 +740,6 @@ section {
     margin: 0;
 }
 
-
-#ajout #prix {
-    font-size: 1.2em;
-    margin-bottom: 2.7em;
-    line-height: 2;
-}
 
 
 
@@ -1114,12 +1108,6 @@ h1 {
         margin: 0 0 0 18em;
     }
 
-    #ajout #prix {
-        .column(3);
-        margin: 0;
-        display: inline-block;
-        vertical-align: top;
-    }
 
     #ajout form {
         .column(4);
@@ -1385,20 +1373,9 @@ h1 {
         margin-top: 1.2em;
     }
 
-    #info #prix {
-        display: none;
-    }
-
     #ajout {
         .column(8);
         margin: 0 0 0 0.3em;
-    }
-
-    #ajout #prix {
-        .column(3);
-        margin: 0;
-        display: inline-block;
-        vertical-align: top;
     }
 
     #ajout form {
@@ -1884,18 +1861,9 @@ h1 {
         width: 320px;
     }
 
-    #info #prix {
-        display: none;
-    }
-
     #ajout {
         width: 320px;
         margin: 1em auto 0 auto;
-    }
-
-    #ajout #prix, #ajout #prix li {
-        width: 8.8em;
-        margin: 0 auto;
     }
 
     #ajout form {
